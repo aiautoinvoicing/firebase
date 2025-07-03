@@ -1,64 +1,50 @@
-永久免费！零成本部署Firebase谷歌云主机，附带CDN和SSL证书
-2025-06-18 07:30·海阳顶端
-Firebase 是谷歌提供的一个一站式云端开发平台，专门帮助开发者快速构建和运营 App 或网站。简单讲，就是几条命令，就可以搭建一个网站或APP。
+# Welcome to your Expo app 👋
 
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-图1
+## Get started
 
-部署过程步骤如下（前提你要能打开Google网站）：
+1. Install dependencies
 
-一、
-https://console.firebase.google.com/注册，并建立一个项目。
+   ```bash
+   npm install
+   ```
 
-如下图2所示，我已经建立了一个lily110的项目。这个步骤很简单。
+2. Start the app
 
+   ```bash
+   npx expo start
+   ```
 
-图2
+In the output, you'll find options to open the app in a
 
-二、本机安装 Node.js（含 npm）。
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-打开浏览器访问：https://nodejs.org/。
-点击下载 LTS安装包（推荐稳定性较好）。
-安装完成后，打开 命令提示符（CMD） 或 PowerShell，验证是否安装成功：
-node -v
-npm -v
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+## Get a fresh project
 
+When you're ready, run:
 
-图3
+```bash
+npm run reset-project
+```
 
-三、安装 Firebase CLI 工具
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-继续在 CMD 或 PowerShell 执行在命令行下执行：
+## Learn more
 
-npm install -g firebase-tools
-装好之后查看版本：
+To learn more about developing your project with Expo, look at the following resources:
 
-firebase --version
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
+## Join the community
 
+Join our community of developers creating universal apps.
 
-图4
-
-四、开始部署
-
-1、命令行下登陆控制台：firebase login --no-localhost。它会在命令行下出现一个网址，让你访问后得到验证码。浏览器打开网址，复制验证码填写到命令行下。验证码是很长的那一串。要注意不是图5的，是图6的。
-
-
-
-
-图6
-
-
-图6
-
-2、初始化项目，命令行执行：firebase init hosting。它会自动在当前目录建立一个public文件夹，里边有一个index.html文件。你可以修改这个index.html文件内容，也可以在同目录下增加文件。
-
-3、部署项目，命令行执行：firebase deploy --only hosting。部署完毕之后，会自动给你一个网址。
-
-
-图8
-
-在部署整个项目，需要你能够访问Google。部署完毕就不需要了。像我的网址是https://lily110.web.app/，不需要代理就能打开了。我这个网址有兴趣你可以看下，就写了一句话。
-
-你以后只需要在public文件夹里放文件或编辑文件就可以，更新时执行firebase deploy --only hosting一条命令就可以了。
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
